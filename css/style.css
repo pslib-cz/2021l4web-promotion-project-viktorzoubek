@@ -1,0 +1,60 @@
+:root{
+    --c-lightpink: #F5E0F0;
+    --c-pink: #FF46A8;
+}
+
+figcaption{
+    display: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family:"Dubai";
+}
+
+
+.topbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(109, 109, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topbar_logo{
+    height: 25%;
+}
+
+main{
+    margin-top: 90px;
+}
+.featured_title{
+    display: block;
+    text-transform: uppercase;
+    background-color:black;
+    color:white;
+    text-align: center;
+    width: 70%;
+    padding: .5rem;
+    margin: auto;
+}
+.featured_window{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featured_window_bg{
+    width: 80%;
+    color: var(--c-lightpink);
+    display: inline;
+    font-size: 8rem;
+    text-transform: uppercase;
+    line-height: 0.75em;
+    margin-top: .2em;
+}

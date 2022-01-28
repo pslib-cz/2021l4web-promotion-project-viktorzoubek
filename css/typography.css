@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Dubai";
+    src: url(../fonts/webfonts/DubaiW23-Light.woff2);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: "Dubai";
+    src: url(../fonts/webfonts/DubaiW23-Medium.woff2);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Dubai";
+    src: url(../fonts/webfonts/DubaiW23-Bold.woff2);
+    font-weight: bolder;
+}
