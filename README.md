@@ -24,4 +24,4 @@ All visual assets were created using Adobe Photoshop, Adobe Illustrator, Blender
 
 [View XD File](https://drive.google.com/file/d/1JXDyxed-xpei9ekVdmY2o38n2QrgXL7q/view?usp=sharing)
 
-[View Website Preview](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[View Website Preview](https://pslib-cz.github.io/2021l4web-promotion-project-viktorzoubek/)
