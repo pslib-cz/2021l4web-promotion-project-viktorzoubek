@@ -27,6 +27,7 @@ body{
 
 .topbar{
     position: fixed;
+    z-index: 2;
     top: 0;
     width: 100vw;
     height: 70px;
@@ -42,8 +43,10 @@ body{
 
 main{
     margin-top: 90px;
+    overflow: hidden;
 }
 .featured_title{
+    font-size: 6vw;
     display: block;
     text-transform: uppercase;
     background-color:black;
@@ -57,27 +60,47 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 }
 .featured_window_bg{
+    z-index: -1;
     box-sizing: content-box;
-    width: 80%;
     color: var(--c-lightpink);
     display: inline;
-    font-size: 8rem;
+    width: 100%;
+    font-size: 30vw;
     text-transform: uppercase;
     line-height: 0.75em;
     margin: .2em 0;
 }
 .featured_btn{
+    z-index: 2;
+    display: block;
     text-transform: uppercase;
     text-align: center;
     color: var(--c-pink);
+    background-color: white;
     max-width: 50%;
     padding: .5em;
     line-height: 2em;
     margin: 0 auto;
     border: 3px solid var(--c-pink);
     border-radius: 100px;
+    transition: 200ms ease-in-out;
+}
+.featured_btn:hover{
+    color: white;
+    background-color: var(--c-pink);
+
+}
+.featured_window_product{
+    z-index: 1;
+    position: absolute;
+}
+.product_photo{
+    width: 70%;
+    margin: 0 auto;
 }
 section{
     width: 80%;
@@ -92,17 +115,22 @@ section{
     margin: .5em 0;
 }
 .aboutUs_btn{
-    font-size: .8em;
+    font-size: .9rem;
     width: fit-content;
     text-transform: uppercase;
     text-align: center;
     color: white;
     background-color: black;
     padding: .8em;
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin: 0 auto;
     border: 3px solid black;
     border-radius: 100px;
+    transition: 200ms ease-in-out;
+}
+.aboutUs_btn:hover{
+    color: black;
+    background-color: white;
 }
 .contactUs_btnPanel{
     display: flex;
@@ -117,15 +145,23 @@ section{
     background-color: black;
     border: 3px solid black;
     padding: .8em;
-    line-height: 1.5em;
-    vertical-align: middle;
+    line-height: 1em;
     margin: 0 auto;
     border-radius: 100px;
+    transition: 200ms ease-in-out;
+}
+.btnPanel_btn:hover{
+    color: black;
+    background-color: white;
 }
 .-white{
     background-color: white;
     color: black;
     border: 3px solid black;
+}
+.-white:hover{
+    color: var(--c-pink);
+    border: 3px solid var(--c-pink);
 }
 .floatBtn{
     position: fixed;
@@ -134,9 +170,17 @@ section{
     background-color: black;
     border: 3px solid white;
     border-radius: 100px 0 0 0;
+    transition: 200ms ease-in-out;
+}
+.floatBtn:hover{
+    background-color: white;
+}
+.floatBtn .floatBtn_text:hover{
+    color: black;
 }
 .floatBtn_text{
     color: white;
+    text-transform: uppercase;
     padding: 1em 3em;
 }
 
@@ -149,6 +193,62 @@ footer{
 .footer_content{
     display: flex;
     flex-direction: column;
-    margin: 2em;
+    width: 80%;
+    margin: 2em auto;
     color: white;
+}
+.footer_link{
+    width: 20%;
+    transition: 200ms ease-in-out;
+}
+.footer_link:hover{
+    background-color: white;
+    color: black;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--c-pink);
+  }
+  ::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active {
+    background: black;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 50px;
+  }
+
+
+
+
+
+
+@media (min-width:800px) and (orientation:landscape) {
+    .featured_title{
+        font-size: 3vw;
+        width: 50%;
+    }
+    .featured_window_bg{
+        font-size: 14vw;
+        width: 40%;
+    }
+    .product_photo{
+        width: 40%;
+    }
+    .featured_btn{
+        max-width: 20%;
+        font-size: 1.2rem;
+    }
+    section{
+        width: 40%;
+    }
+
+
+    .footer_content{
+        width: 40%;
+    }
 }
